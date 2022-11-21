@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Pallindrome {
+	public static void main(String[] args) 
+  {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int k=n;
+		int sum=0;
+		while(k!=0)
+		{
+			sum= (sum*10)+(k%10);
+			k=k/10;
+		}
+		if(sum==n)
+		{
+			System.out.println("The give number "+ n +" is pallindrome");
+		}
+		else
+			System.out.println("The give number "+ n +" is not pallindrome");
+	}
+
+}
